@@ -3,7 +3,8 @@ Notes on How To Run the Cleaning Scripts
 - Download the NYPD Complaint Data from [here.](https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i)
 
 - To clean data and extract cleaned CSV file:
-    spark-submit cleaning.py /user/hps257(username)/NYPD_Complaint_Data_Historic.csv
+
+       spark-submit cleaning.py /user/hps257(username)/NYPD_Complaint_Data_Historic.csv
 
 2. Last argument is the input file(NYPD Crime data) stored in the folder in Hadoop		
 
