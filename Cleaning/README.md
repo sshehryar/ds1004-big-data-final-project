@@ -11,23 +11,26 @@ Notes on How To Run the Cleaning Scripts
 
 		hfs -getmerge cleaned.csv clean.csv
 
-Copy the merged file back to hadoop to run analysis scripts on this cleaned CSV file
+4. Copy the merged file back to hadoop to run analysis scripts on this cleaned CSV file
 
 		Hadoop fs -copyFromLocal cleaned.csv
 
-Spark command to execute deliverable scripts:
+5. Spark command to execute deliverable scripts:
 
 		spark-submit col1.py /user/hps257/NYPD_Complaint_Data_Historic.csv
+	
+*where col1.py is the spark script*
 
-where col1.py is the spark script
-
-Output file will be written to Hadoop. To get output file type:
+6. Output file will be written to Hadoop. To get output file type:
 
 		hfs -getmerge column1.out column1.out
 
-Below Aliases set in .bashrc file		
-
-	alias hfs='/usr/bin/hadoop fs '
-	export HAS=/opt/cloudera/parcels/CDH-5.9.0-1.cdh5.9.0.p0.23/lib
-	export HSJ=hadoop-mapreduce/hadoop-streaming.jar
-	alias hjs='/usr/bin/hadoop jar $HAS/$HSJ'		
+7. Below Aliases set in .bashrc file: 	
+   
+        alias hfs='/usr/bin/hadoop fs '
+	
+        export HAS=/opt/cloudera/parcels/CDH-5.9.0-1.cdh5.9.0.p0.23/lib
+	
+        export HSJ=hadoop-mapreduce/hadoop-streaming.jar
+	
+        alias hjs='/usr/bin/hadoop jar $HAS/$HSJ'		
