@@ -1,4 +1,4 @@
-DS:1004 - Big Data 
+DS 1004 - Big Data - Project
 ----------------------
 **Team Members** 
 
